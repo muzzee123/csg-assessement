@@ -23,11 +23,11 @@
             <td>{{student.grade}}</td>
             <td>{{student.createdDate}}</td>
             <td>{{student.isPresent}}</td>
+            <!-- <td>
+                <button type="button" class="btn btn-tertiary" (click)="editStudent(student.id)">Edit</button>
+            </td> -->
             <td>
-                <button type="button" class="btn btn-tertiary" (click)="editStudent()">Edit</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-secondary" (click)="deleteStudent()">Delete</button>
+                <button type="button" class="btn btn-secondary" (click)="deleteStudent(student.id)">Delete</button>
             </td>
           </tr>
         </tbody>

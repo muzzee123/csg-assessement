@@ -23,17 +23,8 @@ export class StudentsApiService {
   }
 
   addStudent(student) {
-      return this.http.post(`${environment.apiUrl}/students/`, student)
-      .pipe((response: Response) => {
-          if (response.status === 204) {
-              return undefined;
-          } else if (response.status === 500) {
-              return null;
-          }else {
-
-              return response.json();
-          }
-      })
+      return this.http.post(`${environment.apiUrl}/students/`, student);
+    
   }
 
   getReport(className, dateRange) {
@@ -44,7 +35,7 @@ export class StudentsApiService {
       return this.http.delete(`${environment.apiUrl}/students/${id}`);
   }
 
-  updateStudent(id): any {
+  updateStudent(id) {
     return this.http.put(`${environment.apiUrl}/students/`, id);
   }
 

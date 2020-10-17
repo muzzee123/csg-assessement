@@ -157,12 +157,14 @@ excelReportTerm(result){
 }
 
 
-  editStudent(){
+  // editStudent(id){
+  //   this.students_ApiService.updateStudent(id)
+  //   .subscribe(() => this.getStudents());
+  // }
 
-  }
-
-  deleteStudent(){
-
+  deleteStudent(id){
+    this.students_ApiService.delete(id)
+            .subscribe(() => this.getStudents());
   }
   
 }

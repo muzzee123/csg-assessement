@@ -16,3 +16,8 @@ Building and running the project:
 4. The application can be accessed on : http://localhost:4200
 
 please login first
+
+Notes:
+
+Because of time constraint the update functinality is not linked to the api.
+I might have missed some error handling here and there.
