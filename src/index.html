@@ -2,12 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>StudentsPwa</title>
+  <title>StudentsPWA</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+  <style type="text/css">
+      body {
+        margin: 20px;
+      }
+
+      header, footer {
+        margin: 10px 0;
+      }
+      header label {
+        padding-left: 20px;
+      }
+      .wrap-table100 {
+      width: 100%;
+      }
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+.table100 {
+  background-color: #fff;
+  
+}
+
+table {
+  width: 100%;
+  height: 450px;
+}
+
+th, td {
+  font-weight: unset;
+  padding-right: 5px;
+}
+
+.column1 {
+  width: 50px;
+  padding-left: 0px;
+}
+
+.column2 {
+  width: 110px;
+  padding-left: 25px;
+}
+
+.column3 {
+  width: 70px;
+}
+
+.column4 {
+  width: 125px;
+}
+
+.column5 {
+  width: 105px;
+}
+
+.column6 {
+  width: 90px;
+}
+
+.column7 {
+  width: 110px;
+}
+
+.column8 {
+  width: 115px;
+}
+
+.column9 {
+  width: 110px;
+}
+
+.column10 {
+  width: 110px;
+}
+.column11 {
+  width: 110px;
+}
+
+.column12 {
+  width: 110px;
+}
+
+.table100 th {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.table100 td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+/*==================================================================
+[ Fix col ]*/
+.table100 {
+  width: 100%;
+  position: relative;
+  
+}
+
+.table100-firstcol {
+  background-color: #fff;
+  position: absolute;
+  z-index: 1000;
+  width: 100px;
+  height: 450px;
+  top: 0;
+  left: 0;
+}
+
+.table100-firstcol table {
+  background-color: #fff;
+}
+
+.wrap-table100-nextcols {
+  width: 100%;
+  height: 450px;
+  overflow: scroll;
+  padding-left: 100px;
+  padding-bottom: 8px;
+}
+
+.table100-nextcols table{
+  table-layout: fixed;
+}
+
+    </style>
 </head>
 <body>
-  <app-root></app-root>
+    <app>Loading...</app>
+    
 </body>
+
 </html>
